@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Path Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Side-Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Menu-Open" transform="translate(-234.000000, -221.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-7">
+                <g id="Group-3" transform="translate(0.000000, 170.000000)">
+                    <path d="M241.077728,51.1264154 C241.326839,50.9229748 241.685851,50.9700951 241.879604,51.2316616 C242.06196,51.4778419 242.032935,51.8262416 241.821204,52.0359878 L241.77937,52.0736315 L238.350821,54.8736122 C238.159213,55.0300923 237.896383,55.0412695 237.6946,54.9071437 L237.649179,54.8736122 L234.22063,52.0736315 C233.971519,51.8701909 233.926643,51.4932281 234.120396,51.2316616 C234.302751,50.9854814 234.631496,50.9292604 234.877226,51.0931077 L234.922272,51.1264154 L238,53.6396094 L241.077728,51.1264154 Z" id="Path-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

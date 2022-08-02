@@ -1,0 +1,97 @@
+@import "../../../theme";
+
+ul.nav_links {
+  list-style: none;
+  @include flexbox;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-right: 50px;
+    a {
+      @include flexbox;
+      padding: 15px 0;
+      color: $blackColor;
+      font-weight: 500;
+      font-size: 16px;
+
+      &:global(.active) {
+        // background: $themeColor15;
+        // @include box-shadow(0, 0, 1px, rgba(255, 255, 255, 0.72), true);
+        font-weight: 600;
+        color: $primaryColor;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          height: 15px;
+          width: 15px;
+          background: -moz-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 51%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          background: -webkit-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 51%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          background: linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 51%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: -8px;
+          transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+        }
+      }
+      &:hover {
+        color: $whiteColor;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/*start responsive*/
+@media (max-width: 1024px) {
+  :global(.navbar-dark) {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    :global(.navbar-brand) {
+      margin: 0 auto;
+      position: absolute;
+      width: 174px;
+      left: 0;
+      right: 0;
+      :global(img) {
+        max-width: 100%;
+      }
+    }
+    :global(.navbar-toggler) {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  :global(.navbar-dark) {
+    height: auto;
+    // position: relative;
+    padding: 15px;
+    :global(.navbar-brand) {
+      width: 117px;
+      height: 32px;
+    }
+  }
+}
